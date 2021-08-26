@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using Sym4D;
 using Sym = Sym4D.Sym4DEmulator;
 
 public class SensorManager : MonoBehaviour
 {
+
+    public UnityEvent aaa;
+
     // 포트번호 (COM 포트)
     private int xPort; // 의자 컨트롤 포트번호
     private int wPort; // 팬 컨트롤 포트번호
